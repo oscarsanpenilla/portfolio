@@ -1,0 +1,60 @@
+.bg-grad {
+  padding-top: 5rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right top,
+    #9fb7a7,
+    #7eb8af,
+    #56b6c4,
+    #3bb0df,
+    #5fa4f1,
+    #8699f2,
+    #ad8be9,
+    #cf7ad6,
+    #df71c7,
+    #ec69b5,
+    #f563a2,
+    #fb5f8e
+  );
+}
+
+h1 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.p-font {
+  font-family: 'Playfair Display SC', serif;
+}
+
+#main-card {
+  margin-bottom: -5rem;
+}
+
+header img {
+  /* margin-top: -4rem; */
+  border-radius: 1rem;
+}
+
+header i {
+  color: #56b6c4;
+}
+
+nav {
+  opacity: 0.7;
+}
+
+header .card {
+  border-radius: 0.75rem!important;
+}
+
+#about-myself{
+  margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+}
+
