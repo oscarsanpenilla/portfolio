@@ -226,6 +226,20 @@
                 alt="Robot Service"
                 class="card-img-top"
               />
+              <div class="card-img-overlay text-center mt-4">
+                <a
+                  href=""
+                  class="video"
+                  data-video="http://www.youtube.com/embed/3r6HNJQpajA"
+                  data-target="#my-modal"
+                  data-toggle="modal"
+                >
+                  <i
+                    class="fa fa-play-circle p-5 fa-4x text-white"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
               <div class="card-body">
                 <h4 class="card-title">
                   Robot Service
@@ -365,13 +379,19 @@
             <h5>Social Media</h5>
             <div class=" d-flex flex-wrap justify-content-between">
               <a href="https://www.linkedin.com/in/oscar-sandoval-a42248180/">
-                <i class="fab fa-linkedin fa-3x px-2" style="color: #5fa4f1"></i>
+                <i
+                  class="fab fa-linkedin fa-3x px-2"
+                  style="color: #5fa4f1"
+                ></i>
               </a>
               <a href="https://github.com/oscarsanpenilla">
                 <i class="fab fa-github fa-3x px-2" style="color: #9fb7a7"></i>
               </a>
               <a href="https://www.facebook.com/sandovalpenilla">
-                <i class="fab fa-facebook fa-3x px-2" style="color: #df71c7"></i>
+                <i
+                  class="fab fa-facebook fa-3x px-2"
+                  style="color: #df71c7"
+                ></i>
               </a>
             </div>
           </div>
@@ -394,6 +414,27 @@
       &copy; 2019 Oscar Sandoval Penilla
     </footer>
 
+    <!-- MODAL -->
+    <div id="my-modal" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent">
+          <div class="modal-body p-0">
+            <!-- <button class="close" data-dismiss="modal">
+              <span class="text-light">&times;</span>
+            </button> -->
+            <iframe
+              src=""
+              frameborder="0"
+              height="350"
+              width="100%"
+              allowfullscreen
+              controls=1
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- scripts -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -411,5 +452,23 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/ccdb62e458.js"></script>
+
+    <script>
+      // Video Play
+      $(function() {
+        // Auto play modal video
+        $('.video').click(function() {
+          var theModal = $(this).data('target'),
+            videoSRC = $(this).attr('data-video'),
+            videoSRCauto =
+              videoSRC +
+              '?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1';
+          $(theModal + ' iframe').attr('src', videoSRCauto);
+          $(theModal + ' button.close').click(function() {
+            $(theModal + ' iframe').attr('src', videoSRC);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
