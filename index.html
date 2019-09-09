@@ -22,9 +22,12 @@
 
     <title>Oscar Sandoval Portfolio</title>
   </head>
-  <body>
+  <body id="home" data-spy="scroll" data-target="#main-navbar">
     <!-- Nav tabs -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="main-navbar"
+    >
       <div class="container">
         <a class="navbar-brand p-font text-light">OS</a>
         <button
@@ -36,19 +39,19 @@
         </button>
         <div id="my-nav" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About me</a>
+              <a class="nav-link" href="#about-myself">About me</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#my-work" class="nav-link">
                 My Work
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="#contact" class="nav-link">
                 Contact me
               </a>
             </li>
@@ -58,7 +61,7 @@
     </nav>
 
     <!-- header -->
-    <header class="bg-grad">
+    <header class="bg-grad" id="header">
       <div class="container">
         <div class="row mt-3">
           <div class="col">
@@ -75,26 +78,21 @@
                   <div class="col-md-7 p-3">
                     <p class="m-0 text-muted">Hello! I Am</p>
                     <h3 class="display-4 ">Oscar Sandoval Penilla</h3>
-                    <p class="font-weight-bold">Mechatronic Engineer</p>
+                    <p class="font-weight-bold">Mechatronic Engineer (4.0 GPA)</p>
                     <p class="lead">
                       Making use of my creativity, organization, fast learning
                       skills, teamwork capabilities and intelligence to create
                       simple solutions for complex problems
                     </p>
-                    <ul class="list-unstyled">
-                      <li>
-                        <i class="fas fa-calendar-alt mr-2"></i> April, 1992
-                      </li>
-                      <li><i class="fas fa-phone mr-2"></i> (604) 401 8895</li>
-                      <li>
-                        <i class="fas fa-envelope-open mr-2"></i>
-                        oscar.sp@outlook.com
-                      </li>
-                      <li>
-                        <i class="fas fa-home mr-2"></i> Oak & 70th, Vancouver
-                        BC
-                      </li>
-                    </ul>
+                    <div class="text-center">
+                      <a
+                        class="btn btn-lg btn-primary "
+                        href="Resume Oscar Sandoval.pdf"
+                        target="_blank"
+                      >
+                        <i class="fas fa-download mr-2"></i> Resume
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,7 +102,7 @@
       </div>
     </header>
 
-    <!-- about me -->
+    <!-- about myself -->
     <section id="about-myself">
       <div class="container">
         <div class="row py-5">
@@ -213,7 +211,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/cOJHjAhWg_Q"
                   data-target="#modal-1"
                   data-toggle="modal"
                 >
@@ -228,7 +226,7 @@
                   Assembly and Program a 5 axes robotic arm
                 </h4>
                 <p class="card-text">
-                  I assembled all the mechanical and electronic components,
+                  Assembled all the mechanical and electronic components,
                   calculated the direct and inverse kinematics, programmed in
                   ROS using python.
                 </p>
@@ -261,8 +259,8 @@
                   Robot Service
                 </h4>
                 <p class="card-text">
-                  I programmed a robot using ROS capable of locating itself and
-                  planning routes that avoid obstacles using a rotary laser.
+                  Programmed a robot using ROS capable of locating itself and
+                  planning routes that void obstacles using a rotary laser.
                 </p>
               </div>
             </div>
@@ -278,7 +276,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/KYGhVMTbXrA"
                   data-target="#modal-3"
                   data-toggle="modal"
                 >
@@ -293,9 +291,9 @@
                   Distance Keeper Car with PID control
                 </h4>
                 <p class="card-text">
-                  I designed PID control that maintains the distance to a mobile
-                  object using an ultrasonic sensor and a serial connection to a
-                  computer, programmed with C#.
+                  Developed a car with PID control that maintains the distance
+                  to a mobile object using an ultrasonic sensor and a serial
+                  connection to a computer, programmed with C#.
                 </p>
               </div>
             </div>
@@ -311,7 +309,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/_pjNlnkgvBg"
                   data-target="#modal-4"
                   data-toggle="modal"
                 >
@@ -326,15 +324,14 @@
                   Programmable Pneumatic Cutter
                 </h4>
                 <p class="card-text">
-                  As a final project in the Industrial Automatization course, I
-                  built a programmable pneumatic cutter, using the IDEC Micro-1
-                  PLC and an 8 Bar pneumatic installation.
+                  Programmable pneumatic cutter, using the IDEC Micro-1 PLC and
+                  an 8 Bar pneumatic installation.
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-3">
+        <div class="row mt-3 justify-content-center">
           <div class="col-md-3">
             <div class="card">
               <img
@@ -346,7 +343,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/_jtBE4axvS8"
                   data-target="#modal-5"
                   data-toggle="modal"
                 >
@@ -380,7 +377,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/XI_sWcG0Cpc"
                   data-target="#modal-6"
                   data-toggle="modal"
                 >
@@ -395,8 +392,8 @@
                   C# Robot
                 </h4>
                 <p class="card-text">
-                  I programmed a serial connection between an Arduino and C#.
-                  The robot can perform a round trip of four of the different
+                  Programmed a serial connection between an Arduino and C#. The
+                  robot can perform a round trip of four of the different
                   locations.
                 </p>
               </div>
@@ -413,7 +410,7 @@
                 <a
                   href=""
                   class="video"
-                  data-video="http://www.youtube.com/embed/iUPejs3MA0k"
+                  data-video="http://www.youtube.com/embed/KMHwH5CmZy0"
                   data-target="#modal-7"
                   data-toggle="modal"
                 >
@@ -429,12 +426,12 @@
                 </h4>
                 <p class="card-text">
                   Frontend and backend HTML5 development of a web application
-                  that managed bookkeeping (timesheets, payroll, invoices.)
+                  that managed timesheets and payrolls.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <div class="card">
               <img
                 src="./img/plastic-game.jpeg"
@@ -466,11 +463,12 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
+    <!-- contact me -->
     <section id="contact" class="py-5">
       <div class="container">
         <h4 class="display-4 text-center">Contact Me</h4>
@@ -521,6 +519,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-transparent">
           <div class="modal-body p-0">
+            <button class="close text-light" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
             <iframe
               src=""
               frameborder="0"
@@ -683,23 +684,42 @@
 
     <!-- scripts -->
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/ccdb62e458.js"></script>
 
     <script>
+      // Init scrollspy
+      $('body').scrollspy({ target: '#main-navbar' });
+      // Smooth scrolling
+      $('#main-navbar a').on('click', function(e) {
+        e.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          800,
+          function() {
+            window.location.hash = hash;
+          }
+        );
+      });
+
       // Video Play
       $(function() {
         // Auto play modal video

@@ -62,8 +62,3 @@ section#my-work img {
   filter: brightness(70%);
   
 }
-
-.video:hover {
-  cursor: pointer;
-  
-}
