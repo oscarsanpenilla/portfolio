@@ -67,3 +67,14 @@ section#experience .border-right,
 section#experience .border-top {
   border-width: 3px!important;
 }
+
+section#my-work .card,
+section#experience .card {
+  transition: transform .2s;
+  z-index: 100;
+}
+
+section#my-work .card:hover,
+section#experience .card:hover {
+  transform: scale(1.05);
+}

@@ -807,6 +807,17 @@
           });
         });
       });
+
+      var colors = ['#9fb7a7','#56b6c4', '#5fa4f1', '#ad8be9',
+                    '#df71c7','#ec69b5','#f563a2','#fb5f8e'];
+      var random_color = colors[Math.floor(Math.random() * colors.length)];
+      $.each($('section#about-myself .card'), function( index, value ){
+         $(this).attr('color-index', index);
+      });
+      $('section#about-myself .card').hover(
+       function(){ $(this).css('border-color', colors[$(this).attr('color-index')]) },
+       function(){ $(this).css('border-color', '') },
+       )
     </script>
   </body>
 </html>
