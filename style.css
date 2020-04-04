@@ -62,3 +62,8 @@ section#my-work img {
   filter: brightness(70%);
   
 }
+
+section#experience .border-right, 
+section#experience .border-top {
+  border-width: 3px!important;
+}
